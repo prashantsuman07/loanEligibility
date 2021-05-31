@@ -1,0 +1,362 @@
+.main{
+    font-family: Poppins;
+    color: #222222;
+    background-color: #FCFCFF;
+    font-size: 14px;
+    overflow-x: hidden;
+    display: block;
+    padding: 0px 100px;
+}
+.headnav{
+    width: 100%;
+    max-height: 127px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
+    background-color: #FCFCFF;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    /* margin: 27px 0px 10px 120px; */
+    background: url('../assets/logo.png') ;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    opacity: 1;
+    display: inline-block;
+}
+.optionhead{
+    display: inline-block;
+    width: 70%;
+    position: relative;
+    bottom: 60px;
+    left:450px;
+}
+.headeritem{
+    list-style-type: none;
+    display: inline-block;
+}
+.options{
+    display: inline-block;
+    margin: 112px 34px 10px 0px;
+}
+.login{
+    display: inline-block;
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    opacity: 1;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #663399;
+    padding: 10px 15px;
+    width: 80px;
+    margin: 0px 15px 0px 20px;
+    
+
+}
+.login:hover{
+    background-image:linear-gradient(#9F62C9,#663399);
+    color: #FFFFFF;
+}
+.getstarted{
+    display: inline-block;
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    opacity: 1;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    width: 100px;
+    margin: 0px 15px 0px 20px;
+    background-image:linear-gradient(#9F62C9,#663399);
+}
+.getstarted:hover{
+    background-color:#663399;
+}
+.leftcontent{
+    width:39%;
+    float: left;
+    height: 550px;
+    margin-top: 140px;
+    background: url("../assets/blob-small.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.lefthead{
+    width: 407px;
+    height: 98px;
+    font-size: 40px;
+    /* margin: 60px 0px 20px 74px; */
+    padding: 0px 0px 0px 69px;
+}
+
+
+.under{
+    width: 236px;
+    height: 8px;
+    border-radius: 13px;
+    margin: 20px 70px;
+    opacity: 0.7;
+    background-color: #222222;
+    border: 1px solid;
+}
+.under1{
+    width: 125px;
+    height: 8px;
+    margin: 0px;
+    border-radius: 13px;
+    opacity: 0.7;
+    background-color: #222222;
+    border: 1px solid;
+}
+.leftimage{
+    width: 400px;
+    height: 240px;
+    margin: 50px 10px;
+    background: url("../assets/collect_img-video.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    padding: 0px 0px 0px 20px;
+    /* margin: 0px 0px 0px 120px; */
+}
+.rightcontent{
+    width:59%;
+    height: 550px;
+    float: right;
+    margin-top: 140px;
+    background: url("../assets/circle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Calulator{
+    position: relative;
+    top: 75px;
+    left: 160px;
+    width: 290px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    height: 400px;
+    
+}
+.calcibody{
+    padding: 20px 40px 5px 40px ;
+    background:#FFFFFF;
+    font-size: 14px;
+}
+.loantab{
+    position: relative;
+    left: 455px;
+    bottom: 260px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0px 10px 10px 0px ;
+    width: 180px;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    background:#663399;
+}
+.calcihead{
+    background-color: #e6e6e6;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+.card{
+    width: 220px;
+    height: 160px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: #2321321F;
+    border: 1px solid #FFFFFF;
+    background-color: #F9F9F9;
+}
+.getmoney{
+    display: inline-block;
+    width:100px;
+    border-radius: 15px; 
+    border:1px solid;
+    background-color: #ffffff;
+    color: #9F62C9;
+}
+.wrapper{
+    margin: 0px 0px 10px 0px;
+}
+.getmoney:hover{
+    background-color: #9F62C9;
+    color: #FFFFFF;
+}
+.card p{
+    font-size: 10px;
+}
+.card p{
+    margin-left: auto;
+    margin-right: auto;
+}
+.card:hover{
+    background-color: #9F62C9;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.openaccount{
+    padding: 8px 25px;
+    margin: 40px 0px;
+    display: inline-block;
+    border-radius: 15px; 
+    border:1px solid;
+    background-color: #ffffff;
+    color: #9F62C9;
+}
+.openaccount:hover{
+    background-color: #9F62C9;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #9F62C9;
+}
+
+:host ::ng-deep  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #FFFFFF;
+}
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #9F62C9;
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #9F62C9;
+    overflow: visible;
+    cursor: pointer;
+  }
+  .tiles{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .firstCard{
+    display: inline-block;
+    width: 30%;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .secondCard{
+    display: inline-block;
+     width: 30%;
+     position: relative;
+     right:50px;
+     top:100px;
+     float:right;
+  }
+  .secondContent{
+    display: inline-block; 
+    width: 39%;
+    position: relative;
+    float:right;
+  }
+  .secondContentHead{
+    font-size: 40px;
+    padding: 100px 0px 0px 0px;
+  }
+  .secondContentBody{
+    font-size: 12px;
+    margin: 20px 0px;
+  }
+  .loanList{
+    list-style-type: none;
+    margin: 30% 0px;
+    background-image: #663399;
+    padding: 0px;
+  }
+  .secondList{
+    list-style-type: none;
+     display: inline-block;
+  }
+  .loanHead{
+    margin: 0px 0px 30px 0px;
+  }
+  .loanHead div:first-child{
+    font-size: 12px;
+  }
+  .loanHead div:nth-child(2){
+    font-size: 16px;
+  }
+  .loanBtn{
+    margin: 0px 0px 10px 0px;
+  }
+  .secondPage{
+    width: 100%;
+    display: inline-block;
+    background: url(../assets/sol_wave_bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .otheremiHead{
+    font-size: 10px;
+  }
+  .otheremi{
+    width: 100%;
+    height: 30px;
+    border-width: 0 0 2px;
+  }
+  .toggler{
+    width: 100%;
+    font-size: 10px;
+     margin: 0px 0px 10px 0px;
+  }
+  mat-slide-toggle{
+      float: right;
+  }
+  .smallHead{
+    font-size: 10px;
+  }
+  .smallHead span:nth-child(2){
+    float: right;
+  }
+  .amount,.exp{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  mat-form-field {
+    width: 100%;
+  }
+  .otheremi:focus{
+      border-width:0 0 2px;
+  }
+  .card5{
+    background: url('../assets/Covid.png');
+     background-size: contain;
+  }
+  .card4{
+    background: url('../assets/freelancer.png');
+    background-size: contain;
+  }
+  .card3{
+    background: url('../assets/SecurePayments.png');
+    background-size: contain;
+  }
+  .card2{
+    background: url('../assets/Lowinterestrate.png');
+    background-size: contain;
+  }
+  .card1{
+    background: url('../assets/GetPaidInstantly.png');
+    background-size: contain;
+  }

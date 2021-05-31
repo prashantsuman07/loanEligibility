@@ -1,0 +1,123 @@
+<div class="main">
+  <div class="headnav">
+    <div class="logo"></div>
+    <div class="optionhead">
+    <ul class="headeritem"><li *ngFor="let item of header;" class="options">{{item}}</li></ul>
+    <span class="login" (click)="loginpage()">Login</span>
+    <span class="getstarted">Get Started</span>
+    </div>
+  </div>
+
+  <div class="leftcontent"><div class="lefthead">We make it Super Simple</div><hr class="under">
+  <div class="leftimage">
+  </div>
+  </div>
+  <div class="rightcontent">
+  <div class="Calulator">
+    <div class="calcihead">Eligibility Calulator</div>
+    <div class="calcibody">
+    <div class="wrapper">
+    <div class="smallHead">Monthly Income</div>
+    <div class="amount">
+      &#8377;0
+    </div>
+    <input class="slider" type="range" min="100000" max="300000" step="20000"value="&#8377;0" (change)="loanamount($event)" >
+    <div class="smallHead">
+      <span>&#8377;100000</span>
+      <span>&#8377;300000</span>
+    </div>
+  </div>
+  
+  <div  class="wrapper">
+  <div class="smallHead">Monthly Expense</div>
+    <div class="exp">
+      &#8377;0
+    </div>
+    <input class="slider" type="range" min="0" max="100000" step="5000" value="&#8377;0" (change)="expamount($event)" >
+  </div>
+
+  <div  class="wrapper"> 
+  <div class="smallHead">Repayment Tenure</div>
+    <mat-form-field>
+      <mat-select (selectionChange)="yeartenure($event.value)">
+        <mat-option *ngFor="let item of tenure" [value]="item.value">
+          {{item.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    </div>
+
+    <div class="toggler">Do you have any existing loans? <mat-slide-toggle (change)="toggle($event)"></mat-slide-toggle></div>
+   
+    <div  class="wrapper"> 
+    <div  class="otheremiHead">Emi of existing loan(Optional)
+    </div>
+    <input class="otheremi" matInput type="number" placeholder="&#8377;15000" value="&#8377;" [readonly]="isReadOnly" (blur)="onValueChange($event.target.value)">
+    </div>
+
+  </div> 
+  </div>
+  <div class="loantab">
+    <ul class="loanList">
+    <li class="loanHead"><div>Loan Amount</div>
+    <div>&#8377;{{principal}}</div></li>
+    <li class="loanHead"><div>Your Emi will be</div>
+    <div>&#8377;{{emi}}</div></li>
+    <li class="loanBtn"><div class="getmoney" (click)="money()">Get Money</div></li>
+    </ul>
+  </div>
+</div>
+  <div class="secondPage">
+  <div class="firstCard">
+    <ul>
+    <li><div class="card">
+    <div class="card1 tiles" ></div>
+    <div class="container">
+      <h4><b>Quick cash Reimburshment.</b></h4>
+      <p>Get terms loans that your business needs within 72 hrs</p>
+    </div>
+  </div></li>
+    <li><div class="card">
+      <div class="card2 tiles" ></div>
+      <div class="container">
+        <h4><b>Low-interest rate</b></h4>
+        <p>Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
+      </div>
+    </div></li>
+    <li><div class="card">
+      <div class="card3 tiles" ></div>
+      <div class="container">
+        <h4><b>Zero Paperwork</b></h4>
+        <p>Get started instantly by submitting only your basic details & bank statements</p>
+      </div>
+    </div></li>
+  </ul>
+  </div>
+  <div class="secondContent">
+    <div class="secondContentHead">Boost your business<br> with Open</div>
+    <hr class="under1">
+    <div class="secondContentBody">Get your hands on a term loan that’s<br> crafted for your business</div>
+    <div class="openaccount">Get an Open Account</div>
+  </div>
+<div class="secondCard">
+  <ul class="secondList">
+  <li><div class="card">
+    <div class="card4 tiles" ></div>
+            <div class="container">
+              <h4><b>Ace your business finances</b></h4>
+              <p>Manage banking, accounting & everything in between, on one platform</p>
+            </div>
+  </div></li>
+        <li><div class="card">
+          <div class="card5 tiles" ></div>
+              <div class="container">
+                <h4><b>Loans to fight COVID-19</b></h4>
+                <p>Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+             </div>
+           </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
